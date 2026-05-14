@@ -42,3 +42,13 @@ fetch("./pages/tech.html")
   .catch((error) => {
     console.log("Error loading tech:", error);
   });
+
+  fetch("./pages/requestquote.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("request-container").innerHTML = data;
+    console.log("Request for Quote Loaded Successfully");
+  })
+  .catch((error) => {
+    console.log("Error loading Request for quote:", error);
+  });
