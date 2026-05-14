@@ -1,0 +1,57 @@
+/* PATH SECTION */
+
+.path-wrapper {
+  width: 100%;
+  background: var(--primary-bg);
+  padding: 18px 60px;
+  border-top: 1px solid #dce3ee;
+}
+
+.path-container {
+  width: 100%;
+  display: flex;
+  background: var(--primary-bg);
+  align-items: center;
+}
+
+.path-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.path-main {
+  color: #4D545C;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+}
+
+.path-sub {
+  color: #41506f;
+}
+
+.path-current {
+  color: #0D0D0D;
+  font-weight: 400;
+}
+
+.path-arrow {
+  color: #7b879f;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .path-wrapper {
+    padding: 16px 20px;
+  }
+
+  .path-left {
+    font-size: 14px;
+    gap: 8px;
+  }
+}

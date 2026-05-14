@@ -1,0 +1,114 @@
+/* styles.css */
+
+:root {
+  --primary-bg: #FBFBFB; 
+  --border: #F7F8F9;
+  --shadow: #F7F8F9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--primary-bg);
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  background: var(--primary-bg);
+  padding: 18px 60px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo-image {
+  width: 109px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* NAV */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #0d1b52;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdown-btn {
+  border: none;
+  background: transparent;
+  color: #0d1b52;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-icon {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT BUTTON */
+
+.contact-btn {
+  border: none;
+  background: #0d1b52;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background: #16307d;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .logo-image {
+    width: 140px;
+  }
+}
