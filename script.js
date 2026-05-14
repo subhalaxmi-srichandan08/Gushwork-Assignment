@@ -31,3 +31,14 @@ fetch("./pages/home.html")
   .catch((error) => {
     console.log("Error loading home:", error);
   });
+
+  // LOAD HOME
+fetch("./pages/tech.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("tech-container").innerHTML = data;
+    console.log("Home Loaded Successfully");
+  })
+  .catch((error) => {
+    console.log("Error loading tech:", error);
+  });
