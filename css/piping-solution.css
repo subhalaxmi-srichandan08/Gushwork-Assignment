@@ -1,0 +1,376 @@
+/* SECTION */
+.piping-section {
+  width: 100%;
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+/* CONTAINER */
+.piping-container {
+  max-width: 1240px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE */
+.piping-title {
+  max-width: 800px;
+
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  text-align: center;
+  color: #111111;
+
+  margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.piping-description {
+  max-width: 850px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #555555;
+
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.piping-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.piping-card {
+  border-radius: 24px;
+  overflow: hidden;
+
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.piping-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* HELP BOX */
+.help-box {
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+  background: #ebebeb;
+
+  text-align: left;
+
+  margin-bottom: 80px;
+}
+
+.help-title {
+  font-family: "Vert Grotesk Display", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 120%;
+
+  color: #111111;
+
+  margin-bottom: 14px;
+}
+
+.help-title span {
+  color: #2b3990;
+}
+
+.help-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  color: #555555;
+}
+
+/* RESOURCES */
+.resources-section {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 100px;
+}
+
+.resources-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  color: #111111;
+
+  margin-bottom: 20px;
+}
+
+.resources-description {
+  max-width: 850px;
+  margin: auto auto 50px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #555555;
+}
+
+/* DOWNLOAD BOX */
+.download-box {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+/* ROW */
+.download-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 26px 32px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.download-row:last-child {
+  border-bottom: none;
+}
+
+/* LEFT */
+.download-left {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+
+  color: #111111;
+}
+
+/* RIGHT */
+.download-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+
+  color: #2b3990;
+  cursor: pointer;
+}
+
+.download-icon {
+  font-size: 18px;
+}
+
+/* CTA SECTION */
+.cta-section {
+  width: 100%;
+  max-width: 1240px;
+
+  background: #0f1f63;
+  border-radius: 32px;
+
+  padding: 56px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+
+  color: white;
+}
+
+/* LEFT */
+.cta-left {
+  flex: 1;
+}
+
+.cta-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+
+  margin-bottom: 24px;
+}
+
+.cta-description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.6%;
+
+  margin-bottom: 28px;
+}
+
+.cta-contact {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+
+  text-decoration: underline;
+}
+
+/* FORM BOX */
+.cta-form-box {
+  width: 420px;
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 32px;
+}
+
+.form-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+
+  color: #111111;
+
+  margin-bottom: 24px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUT */
+.form-input,
+.phone-input,
+.country-code {
+  width: 100%;
+  height: 48px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+
+  padding: 0 16px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+
+  outline: none;
+}
+
+/* PHONE */
+.phone-field {
+  display: flex;
+  gap: 12px;
+}
+
+.country-code {
+  width: 110px;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  height: 44px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #000000;
+  color: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .piping-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .cta-form-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .piping-title,
+  .resources-title {
+    font-size: 34px;
+  }
+
+  .cta-title {
+    font-size: 36px;
+  }
+
+  .piping-description,
+  .resources-description,
+  .cta-description {
+    font-size: 16px;
+  }
+
+  .piping-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cta-section {
+    padding: 32px 24px;
+  }
+
+  .phone-field {
+    flex-direction: column;
+  }
+
+  .country-code {
+    width: 100%;
+  }
+}

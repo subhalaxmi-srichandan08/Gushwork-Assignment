@@ -1,0 +1,141 @@
+/* SECTION */
+.versatile-section {
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.versatile-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TOP ROW */
+.versatile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* FIX overflow issue */
+}
+
+/* LEFT TITLE */
+.versatile-title {
+    font-family: "Vert Grotesk Display", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+    color: #111;
+    max-width: 500px;
+}
+
+/* RIGHT IMAGES */
+.versatile-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    /* prevents spill */
+}
+
+.versatile-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.v-img {
+    width: 180px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 16px;
+    max-width: 100%;
+    /* IMPORTANT */
+    height: auto;
+}
+
+/* DESCRIPTION */
+.versatile-desc {
+    margin-top: 30px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #444;
+    max-width: 900px;
+}
+
+/* MARQUEE */
+.versatile-marquee {
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* TRACK */
+.marquee-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scroll 18s linear infinite;
+}
+
+.marquee-track img {
+    object-fit: contain;
+    border-radius: 10px;
+    width: 420px;
+    height: 420px;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .versatile-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .versatile-right {
+        justify-content: center;
+    }
+
+    .v-img {
+        width: 50px;
+        height: 90px;
+    }
+
+    .versatile-title {
+        font-size: 32px;
+    }
+
+    .versatile-desc {
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .v-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .versatile-right {
+        justify-content: center;
+    }
+}

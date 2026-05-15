@@ -1,0 +1,92 @@
+/* SECTION */
+.trusted-section {
+  width: 100%;
+  padding: 90px 20px;
+  background: #ffffff;
+}
+
+/* CONTAINER */
+.trusted-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* TITLE */
+.trusted-title {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #111111;
+
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.trusted-description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  color: #555555;
+
+  max-width: 850px;
+  margin-bottom: 60px;
+}
+
+/* GRID */
+.trusted-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.trusted-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.trusted-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .trusted-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .trusted-title {
+    font-size: 34px;
+  }
+
+  .trusted-description {
+    font-size: 16px;
+  }
+
+  .trusted-grid {
+    grid-template-columns: 1fr;
+  }
+}
